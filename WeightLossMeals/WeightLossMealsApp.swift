@@ -11,7 +11,9 @@ import SwiftUI
 struct WeightLossMealsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                FirstDetailView()
+            }
         }
     }
 }

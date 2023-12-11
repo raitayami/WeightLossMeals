@@ -11,6 +11,9 @@
 		A35B411C2B249504008F7EC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B411B2B249504008F7EC5 /* ContentView.swift */; };
 		A35B411E2B249507008F7EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35B411D2B249507008F7EC5 /* Assets.xcassets */; };
 		A35B41212B249507008F7EC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35B41202B249507008F7EC5 /* Preview Assets.xcassets */; };
+		A3F69F462B263E8B0018B2BA /* FirstDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F69F452B263E8B0018B2BA /* FirstDetailView.swift */; };
+		A3F69F482B26425A0018B2BA /* SecondDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F69F472B26425A0018B2BA /* SecondDetailView.swift */; };
+		A3FD8E2E2B2724A9000C6E06 /* CalculateBMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD8E2D2B2724A9000C6E06 /* CalculateBMR.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		A35B411B2B249504008F7EC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A35B411D2B249507008F7EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A35B41202B249507008F7EC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A3F69F452B263E8B0018B2BA /* FirstDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDetailView.swift; sourceTree = "<group>"; };
+		A3F69F472B26425A0018B2BA /* SecondDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDetailView.swift; sourceTree = "<group>"; };
+		A3FD8E2D2B2724A9000C6E06 /* CalculateBMR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateBMR.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,10 @@
 		A35B41182B249504008F7EC5 /* WeightLossMeals */ = {
 			isa = PBXGroup;
 			children = (
+				A3FD8E2C2B272493000C6E06 /* Helper */,
+				A35B41272B24951F008F7EC5 /* Models */,
+				A35B41282B249524008F7EC5 /* Views */,
+				A35B41292B249528008F7EC5 /* ViewModels */,
 				A35B41192B249504008F7EC5 /* WeightLossMealsApp.swift */,
 				A35B411B2B249504008F7EC5 /* ContentView.swift */,
 				A35B411D2B249507008F7EC5 /* Assets.xcassets */,
@@ -65,6 +75,45 @@
 				A35B41202B249507008F7EC5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A35B41272B24951F008F7EC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A35B41282B249524008F7EC5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3F69F442B263E6B0018B2BA /* Form */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A35B41292B249528008F7EC5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A3F69F442B263E6B0018B2BA /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				A3F69F452B263E8B0018B2BA /* FirstDetailView.swift */,
+				A3F69F472B26425A0018B2BA /* SecondDetailView.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		A3FD8E2C2B272493000C6E06 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD8E2D2B2724A9000C6E06 /* CalculateBMR.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F69F462B263E8B0018B2BA /* FirstDetailView.swift in Sources */,
 				A35B411C2B249504008F7EC5 /* ContentView.swift in Sources */,
+				A3FD8E2E2B2724A9000C6E06 /* CalculateBMR.swift in Sources */,
 				A35B411A2B249504008F7EC5 /* WeightLossMealsApp.swift in Sources */,
+				A3F69F482B26425A0018B2BA /* SecondDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
