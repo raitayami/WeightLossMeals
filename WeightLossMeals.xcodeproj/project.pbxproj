@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A355FE1E2B2898A500D85800 /* ActivityLevelOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A355FE1D2B2898A500D85800 /* ActivityLevelOption.swift */; };
 		A355FE202B289CEA00D85800 /* ThirdDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A355FE1F2B289CEA00D85800 /* ThirdDetailView.swift */; };
+		A355FE222B28CD4400D85800 /* CalculateMaintenance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A355FE212B28CD4400D85800 /* CalculateMaintenance.swift */; };
 		A35B411A2B249504008F7EC5 /* WeightLossMealsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B41192B249504008F7EC5 /* WeightLossMealsApp.swift */; };
 		A35B411C2B249504008F7EC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B411B2B249504008F7EC5 /* ContentView.swift */; };
 		A35B411E2B249507008F7EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35B411D2B249507008F7EC5 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		A355FE1D2B2898A500D85800 /* ActivityLevelOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLevelOption.swift; sourceTree = "<group>"; };
 		A355FE1F2B289CEA00D85800 /* ThirdDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdDetailView.swift; sourceTree = "<group>"; };
+		A355FE212B28CD4400D85800 /* CalculateMaintenance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateMaintenance.swift; sourceTree = "<group>"; };
 		A35B41162B249504008F7EC5 /* WeightLossMeals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightLossMeals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35B41192B249504008F7EC5 /* WeightLossMealsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightLossMealsApp.swift; sourceTree = "<group>"; };
 		A35B411B2B249504008F7EC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				A3FD8E2D2B2724A9000C6E06 /* CalculateBMR.swift */,
 				A355FE1D2B2898A500D85800 /* ActivityLevelOption.swift */,
+				A355FE212B28CD4400D85800 /* CalculateMaintenance.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				A35B411C2B249504008F7EC5 /* ContentView.swift in Sources */,
 				A3FD8E2E2B2724A9000C6E06 /* CalculateBMR.swift in Sources */,
 				A35B411A2B249504008F7EC5 /* WeightLossMealsApp.swift in Sources */,
+				A355FE222B28CD4400D85800 /* CalculateMaintenance.swift in Sources */,
 				A3F69F482B26425A0018B2BA /* SecondDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,9 @@ import SwiftUI
 
 struct SecondDetailView: View {
     
-    @State private var activityLevel = ""
+    
+    @State var bmr: String
+    
     
     var body: some View {
         VStack{
@@ -19,8 +21,12 @@ struct SecondDetailView: View {
                 .bold()
                 .italic()
             
+            
+            // Little to none
             NavigationLink {
-                ThirdDetailView()
+                
+                ThirdDetailView(bmr: bmr, activityLevel: "Little")
+                
             } label: {
                 ActivityLevelOption(
                     title: "Little/ no exercise",
@@ -30,8 +36,9 @@ struct SecondDetailView: View {
             }
             .buttonStyle(PlainButtonStyle())
             
+            // 1-3 times a week
             NavigationLink {
-                ThirdDetailView()
+                ThirdDetailView(bmr: bmr, activityLevel: "Low")
             } label: {
                 ActivityLevelOption(
                     title: "1-3 times a week",
@@ -41,9 +48,9 @@ struct SecondDetailView: View {
             }
             .buttonStyle(PlainButtonStyle())
 
-     
+            // 4-5 times a week
             NavigationLink {
-                ThirdDetailView()
+                ThirdDetailView(bmr: bmr, activityLevel: "Moderate")
             } label: {
                 ActivityLevelOption(
                     title: "4-5 times a week",
@@ -53,8 +60,9 @@ struct SecondDetailView: View {
             }
             .buttonStyle(PlainButtonStyle())
             
+            // INTENSE - DAILY: 3-4 times a week
             NavigationLink {
-                ThirdDetailView()
+                ThirdDetailView(bmr: bmr, activityLevel: "Daily")
             } label: {
                 ActivityLevelOption(
                     title: "Daily or 3-4 times intense",
@@ -64,8 +72,9 @@ struct SecondDetailView: View {
             }
             .buttonStyle(PlainButtonStyle())
 
+            // INTENSE DAILY: 6-7 times a week
             NavigationLink {
-                ThirdDetailView()
+                ThirdDetailView(bmr: bmr, activityLevel: "Active")
             } label: {
                 ActivityLevelOption(
                     title: "Intense 6-7 times a week",
@@ -82,5 +91,5 @@ struct SecondDetailView: View {
 }
 
 #Preview {
-    SecondDetailView()
+    SecondDetailView(bmr: "1453")
 }

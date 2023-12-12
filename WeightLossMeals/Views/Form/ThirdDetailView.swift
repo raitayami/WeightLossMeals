@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct ThirdDetailView: View {
+    
+    @State var bmr: String
+    @State var activityLevel = ""
+    @State var maintenance = ""
+    var displayText: Double {
+        
+        return CalculateMaintenance().calculate(activityLevel: activityLevel, bmr: bmr)
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        
+        VStack{
+            Text(String(displayText))
+            
+        }
     }
 }
 
 #Preview {
-    ThirdDetailView()
+    ThirdDetailView(bmr: "42114")
 }

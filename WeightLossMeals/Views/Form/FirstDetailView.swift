@@ -17,7 +17,7 @@ struct FirstDetailView: View {
     
     let genderChoices = ["Male", "Female"]
     
-    @State private var bmr = ""
+    @State var bmr = ""
     
     var body: some View {
         
@@ -86,7 +86,7 @@ struct FirstDetailView: View {
                     needNumber = true;
                 } else {
                     bmr =
-                    "\(CalculateBMR().calculating(gender: gender, weight: weight, height: height, age: age)) calories"
+                    "\(CalculateBMR().calculating(gender: gender, weight: weight, height: height, age: age))"
                 }
    
             }, label: {
@@ -130,7 +130,7 @@ struct FirstDetailView: View {
             Spacer()
             
             NavigationLink{
-                SecondDetailView()
+                SecondDetailView(bmr: bmr)
             } label: {
                 
                 
