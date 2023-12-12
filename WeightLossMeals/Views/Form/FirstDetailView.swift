@@ -13,6 +13,7 @@ struct FirstDetailView: View {
     @State private var age = ""
     @State private var height = ""
     @State private var weight = ""
+    @State private var needNumber = false
     
     let genderChoices = ["Male", "Female"]
     
@@ -80,10 +81,14 @@ struct FirstDetailView: View {
             Spacer()
             
             Button(action: {
-                bmr =
-                "\(CalculateBMR().calculating(gender: gender, weight: weight, height: height, age: age)) calories"
                 
-                
+                if height == "" || weight == "" || age == ""{
+                    needNumber = true;
+                } else {
+                    bmr =
+                    "\(CalculateBMR().calculating(gender: gender, weight: weight, height: height, age: age)) calories"
+                }
+   
             }, label: {
                 
                 Image(systemName: "sum")
@@ -98,6 +103,11 @@ struct FirstDetailView: View {
             .buttonStyle(.bordered)
             .background(Color.blue)
             .cornerRadius(10)
+            .alert(isPresented: $needNumber, content: {
+                            Alert(title: Text("Oops"),
+                                  message: Text("You must have forgot to put the details in"),
+                                  dismissButton: .default(Text("Dismiss")))
+                        })
             
             
             
