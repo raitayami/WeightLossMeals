@@ -26,7 +26,7 @@ struct ActivityLevelOption{
                     .padding([.top, .leading, .bottom], 10)
                 
                 Text(description)
-                    .padding([.leading, .bottom], 15)
+                    .padding([.leading, .bottom, .trailing], 15)
                     .font(.caption)
                 
             }
