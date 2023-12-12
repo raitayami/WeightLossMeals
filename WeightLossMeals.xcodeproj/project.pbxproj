@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A355FE1E2B2898A500D85800 /* ActivityLevelOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A355FE1D2B2898A500D85800 /* ActivityLevelOption.swift */; };
 		A35B411A2B249504008F7EC5 /* WeightLossMealsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B41192B249504008F7EC5 /* WeightLossMealsApp.swift */; };
 		A35B411C2B249504008F7EC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B411B2B249504008F7EC5 /* ContentView.swift */; };
 		A35B411E2B249507008F7EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35B411D2B249507008F7EC5 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A355FE1D2B2898A500D85800 /* ActivityLevelOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLevelOption.swift; sourceTree = "<group>"; };
 		A35B41162B249504008F7EC5 /* WeightLossMeals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightLossMeals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35B41192B249504008F7EC5 /* WeightLossMealsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightLossMealsApp.swift; sourceTree = "<group>"; };
 		A35B411B2B249504008F7EC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				A3FD8E2D2B2724A9000C6E06 /* CalculateBMR.swift */,
+				A355FE1D2B2898A500D85800 /* ActivityLevelOption.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3F69F462B263E8B0018B2BA /* FirstDetailView.swift in Sources */,
+				A355FE1E2B2898A500D85800 /* ActivityLevelOption.swift in Sources */,
 				A35B411C2B249504008F7EC5 /* ContentView.swift in Sources */,
 				A3FD8E2E2B2724A9000C6E06 /* CalculateBMR.swift in Sources */,
 				A35B411A2B249504008F7EC5 /* WeightLossMealsApp.swift in Sources */,
