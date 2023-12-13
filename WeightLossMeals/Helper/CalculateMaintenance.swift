@@ -10,33 +10,26 @@ import SwiftUI
 
 struct CalculateMaintenance{
     
-    @State var answer = 0.0
+//    @State var answer = 0.0
     var activityLevel = ""
     var bmr = ""
     
     
     func calculate(activityLevel: String, bmr: String) -> Double {
         
+        var answer: Double = 0.0
+        
         if (activityLevel == "Little"){
             answer = Double(bmr)! * 1.20
-        }
-        if (activityLevel == "Low"){
+        } else if (activityLevel == "Low"){
             answer = Double(bmr)! * 1.375
-        }
-        if (activityLevel == "Moderate"){
+        } else if (activityLevel == "Moderate"){
             answer = Double(bmr)! * 1.467
-        }
-        if (activityLevel == "Daily"){
+        } else if (activityLevel == "Daily"){
             answer = Double(bmr)! * 1.55
-        }
-        if (activityLevel == "Active"){
-            
-            print("----\(Double(bmr)!)")
-            answer = Double(bmr)!
-            print(">>>>>\(answer)")
-            answer = answer * 1.725
-            print(answer)
-            
+        } else if (activityLevel == "Active"){
+            answer = Double(bmr)! * 1.725
+     
         }
         return answer
     }

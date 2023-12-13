@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ThirdDetailView: View {
     
-    @State var bmr: String
-    @State var activityLevel = ""
+    @Binding var bmr: String
+    var activityLevel = ""
     @State var maintenance = ""
     var displayText: Double {
         
@@ -21,6 +21,7 @@ struct ThirdDetailView: View {
         
         
         VStack{
+
             Text(String(displayText))
             
         }
@@ -28,5 +29,5 @@ struct ThirdDetailView: View {
 }
 
 #Preview {
-    ThirdDetailView(bmr: "42114")
+    ThirdDetailView(bmr: .constant("42114"))
 }

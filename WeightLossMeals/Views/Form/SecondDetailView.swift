@@ -10,7 +10,7 @@ import SwiftUI
 struct SecondDetailView: View {
     
     
-    @State var bmr: String
+    @Binding var bmr: String
     
     
     var body: some View {
@@ -25,7 +25,7 @@ struct SecondDetailView: View {
             // Little to none
             NavigationLink {
                 
-                ThirdDetailView(bmr: bmr, activityLevel: "Little")
+                ThirdDetailView(bmr: $bmr, activityLevel: "Little")
                 
             } label: {
                 ActivityLevelOption(
@@ -38,7 +38,7 @@ struct SecondDetailView: View {
             
             // 1-3 times a week
             NavigationLink {
-                ThirdDetailView(bmr: bmr, activityLevel: "Low")
+                ThirdDetailView(bmr: $bmr, activityLevel: "Low")
             } label: {
                 ActivityLevelOption(
                     title: "1-3 times a week",
@@ -50,7 +50,7 @@ struct SecondDetailView: View {
 
             // 4-5 times a week
             NavigationLink {
-                ThirdDetailView(bmr: bmr, activityLevel: "Moderate")
+                ThirdDetailView(bmr: $bmr, activityLevel: "Moderate")
             } label: {
                 ActivityLevelOption(
                     title: "4-5 times a week",
@@ -62,7 +62,7 @@ struct SecondDetailView: View {
             
             // INTENSE - DAILY: 3-4 times a week
             NavigationLink {
-                ThirdDetailView(bmr: bmr, activityLevel: "Daily")
+                ThirdDetailView(bmr: $bmr, activityLevel: "Daily")
             } label: {
                 ActivityLevelOption(
                     title: "Daily or 3-4 times intense",
@@ -74,7 +74,7 @@ struct SecondDetailView: View {
 
             // INTENSE DAILY: 6-7 times a week
             NavigationLink {
-                ThirdDetailView(bmr: bmr, activityLevel: "Active")
+                ThirdDetailView(bmr: $bmr, activityLevel: "Active")
             } label: {
                 ActivityLevelOption(
                     title: "Intense 6-7 times a week",
@@ -91,5 +91,5 @@ struct SecondDetailView: View {
 }
 
 #Preview {
-    SecondDetailView(bmr: "1453")
+    SecondDetailView(bmr: .constant("1453"))
 }

@@ -130,7 +130,7 @@ struct FirstDetailView: View {
             Spacer()
             
             NavigationLink{
-                SecondDetailView(bmr: bmr)
+                SecondDetailView(bmr: $bmr)
             } label: {
                 
                 
