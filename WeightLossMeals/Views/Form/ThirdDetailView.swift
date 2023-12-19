@@ -27,27 +27,23 @@ struct ThirdDetailView: View {
                 Text("Maintenance Calories: ")
                     .bold()
                     .font(.title)
-                .padding(.top, 20)
+                    .padding(.top, 20)
                 
                 Text(String(displayText))
                     .bold()
                     .font(.title)
-                .padding(.top, 20)
+                    .padding(.top, 20)
             }
             
+        
             
-            VStack(spacing: 30){
-                
-                Text("With your chosen activity level, this is how much you have to eat to maintain your weight.")
-                    
-                
-                Text("Please select below how much weight you would like to lose weekly.")
-                    
-            }
+            Text("With your chosen activity level, this is how much you have to eat to maintain your weight.")
+            
+            
+            Text("Please select below how much weight you would like to lose weekly.")
 
             
-            
-            VStack(spacing: 40){
+            VStack(spacing: 25){
                 
                 NavigationLink {
                     
@@ -66,10 +62,10 @@ struct ThirdDetailView: View {
                     
                     KGaWeekOption(title: "0.5kg a week", description: String(displayText - 500))
                         .row()
-                 
+                    
                 }
                 .modifier(KGaWeekOptionModifier(backgroundColor: .green))
-
+                
                 
                 NavigationLink {
                     
@@ -80,8 +76,8 @@ struct ThirdDetailView: View {
                     
                 }
                 .modifier(KGaWeekOptionModifier(backgroundColor: .orange))
-
-
+                
+                
                 NavigationLink {
                     
                 } label: {
@@ -90,8 +86,8 @@ struct ThirdDetailView: View {
                         .row()
                 }
                 .modifier(KGaWeekOptionModifier(backgroundColor: .red))
-
-
+                
+                
                 
             }
             .padding()
