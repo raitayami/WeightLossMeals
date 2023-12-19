@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A308ECC12B29DBA800C8F93D /* FourthDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308ECC02B29DBA800C8F93D /* FourthDetailView.swift */; };
+		A33822F62B31B8BA006475C7 /* KGaWeekOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33822F52B31B8BA006475C7 /* KGaWeekOption.swift */; };
 		A355FE1E2B2898A500D85800 /* ActivityLevelOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A355FE1D2B2898A500D85800 /* ActivityLevelOption.swift */; };
 		A355FE202B289CEA00D85800 /* ThirdDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A355FE1F2B289CEA00D85800 /* ThirdDetailView.swift */; };
 		A355FE222B28CD4400D85800 /* CalculateMaintenance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A355FE212B28CD4400D85800 /* CalculateMaintenance.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A308ECC02B29DBA800C8F93D /* FourthDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthDetailView.swift; sourceTree = "<group>"; };
+		A33822F52B31B8BA006475C7 /* KGaWeekOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KGaWeekOption.swift; sourceTree = "<group>"; };
 		A355FE1D2B2898A500D85800 /* ActivityLevelOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLevelOption.swift; sourceTree = "<group>"; };
 		A355FE1F2B289CEA00D85800 /* ThirdDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdDetailView.swift; sourceTree = "<group>"; };
 		A355FE212B28CD4400D85800 /* CalculateMaintenance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateMaintenance.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 				A3F69F452B263E8B0018B2BA /* FirstDetailView.swift */,
 				A3F69F472B26425A0018B2BA /* SecondDetailView.swift */,
 				A355FE1F2B289CEA00D85800 /* ThirdDetailView.swift */,
+				A308ECC02B29DBA800C8F93D /* FourthDetailView.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 				A3FD8E2D2B2724A9000C6E06 /* CalculateBMR.swift */,
 				A355FE1D2B2898A500D85800 /* ActivityLevelOption.swift */,
 				A355FE212B28CD4400D85800 /* CalculateMaintenance.swift */,
+				A33822F52B31B8BA006475C7 /* KGaWeekOption.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -199,9 +205,11 @@
 				A355FE1E2B2898A500D85800 /* ActivityLevelOption.swift in Sources */,
 				A355FE202B289CEA00D85800 /* ThirdDetailView.swift in Sources */,
 				A35B411C2B249504008F7EC5 /* ContentView.swift in Sources */,
+				A33822F62B31B8BA006475C7 /* KGaWeekOption.swift in Sources */,
 				A3FD8E2E2B2724A9000C6E06 /* CalculateBMR.swift in Sources */,
 				A35B411A2B249504008F7EC5 /* WeightLossMealsApp.swift in Sources */,
 				A355FE222B28CD4400D85800 /* CalculateMaintenance.swift in Sources */,
+				A308ECC12B29DBA800C8F93D /* FourthDetailView.swift in Sources */,
 				A3F69F482B26425A0018B2BA /* SecondDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

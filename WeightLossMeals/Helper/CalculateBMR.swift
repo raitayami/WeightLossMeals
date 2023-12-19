@@ -13,14 +13,14 @@ struct CalculateBMR{
 
     func calculating(gender: String, weight: String, height: String, age: String) -> String{
         
-        let maleNumber = 88.362
-        let maleFirstTerm = 13.397 * Double(weight)!
-        let maleSecondTerm = 4.799 * Double(height)!
-        let maleThirdTerm = 5.677 * Double(age)!
-        let femaleNumber = 447.593
-        let femaleFirstTerm = 9.247 * Double(weight)!
-        let femaleSecondTerm = 3.098 * Double(height)!
-        let femaleThirdterm = 4.330 * Double(age)!
+        let maleNumber = 5.0
+        let maleFirstTerm = 10.0 * Double(weight)!
+        let maleSecondTerm = 6.25 * Double(height)!
+        let maleThirdTerm = 5.0 * Double(age)!
+        let femaleNumber = 161.0
+        let femaleFirstTerm = 10 * Double(weight)!
+        let femaleSecondTerm = 6.25 * Double(height)!
+        let femaleThirdterm = 5.0 * Double(age)!
         
         var bmrValue = 0.0
         var answer = ""
